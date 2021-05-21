@@ -21,6 +21,15 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+        var res:Int = -1
+        var countDrawables:Int = -1
+        while (res != 0) {
+            countDrawables++;
+            res = getResources().getIdentifier("pu" + (countDrawables),
+                "drawable", getPackageName());
+        }
+        var TotalPictures = countDrawables
+
 
         Toast.makeText(baseContext, "作者：呂秉澤", Toast.LENGTH_LONG).show()
 
@@ -34,7 +43,14 @@ class MainActivity : AppCompatActivity() {
                 return true
             }
         })
+        imageNext.setOnClickListener(object  :View.OnClickListener)
+        {
+            override fun onClickListner(p0:View?): Boolen
+            {
 
+                return true
+            }
+        }
 
     }
 }
