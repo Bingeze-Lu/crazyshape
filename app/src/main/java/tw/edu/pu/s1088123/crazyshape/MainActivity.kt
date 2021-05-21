@@ -43,14 +43,7 @@ class MainActivity : AppCompatActivity() {
                 return true
             }
         })
-        imageNext.setOnClickListener(object  :View.OnClickListener)
-        {
-            override fun onClickListner(p0:View?): Boolen
-            {
 
-                return true
-            }
-        }
 
     }
 }
