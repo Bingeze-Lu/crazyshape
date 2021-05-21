@@ -4,9 +4,17 @@ import android.content.Intent
 import android.os.Bundle
 import android.view.View
 import android.view.View.OnLongClickListener
+import android.widget.ImageView
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
+import com.bumptech.glide.annotation.GlideModule
+import com.bumptech.glide.module.AppGlideModule
 import kotlinx.android.synthetic.main.activity_main.*
+@GlideModule
+public final class MyAppGlideModule : AppGlideModule()
+
+
+
 
 
 class MainActivity : AppCompatActivity() {
