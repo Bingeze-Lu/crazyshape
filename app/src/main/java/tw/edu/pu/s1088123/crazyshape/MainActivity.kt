@@ -41,9 +41,16 @@ class MainActivity : AppCompatActivity() {
                 intent = Intent(this@MainActivity, GameActivity::class.java)
                 startActivity(intent)
                 return true
+
             }
         })
-
+        imageNext.setOnClickListener(object : View.OnClickListener
+        {
+            override fun onClick(v: View?):Boolean {
+                TODO("Not yet implemented")
+                var
+            }
+        })
 
     }
 }

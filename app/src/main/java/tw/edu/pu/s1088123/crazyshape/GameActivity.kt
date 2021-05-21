@@ -79,20 +79,28 @@ class GameActivity : AppCompatActivity()
         var Result:String = ""
         var FlagDraw:Int = 0
         when (outputs[0].label) {
-            "circle" -> {Result = "圓形"
-                FlagDraw=1}
-            "square" -> {Result = "方形"
-                FlagDraw=2}
-            "star" -> {Result = "星形"
-                FlagDraw=3}
-            "triangle" -> {Result = "三角形"
-                FlagDraw=4}
+            "circle" -> {
+                Result = "您畫的是圓形喔"
+                FlagDraw = 1
+            }
+            "square" -> {
+                Result = "您畫的是方形喔"
+                FlagDraw = 2
+            }
+            "star" -> {
+                Result = "您畫的是星形喔"
+                FlagDraw = 3
+            }
+            "triangle" -> {
+                Result = "您畫的是三角形喔"
+                FlagDraw = 4
+            }
         }
-        Result += ": " + String.format("%.1f%%", outputs[0].score * 100.0f)
+        Result += ": " + String.format("%.1f%%",outputs[0].score * 100.0f)
 
 
 // Releases model resources if no longer used.
-        model.close()
+                    model . close ()
 
 
         Toast.makeText(this,Result, Toast.LENGTH_SHORT).show()
